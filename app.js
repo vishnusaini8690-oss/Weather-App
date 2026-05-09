@@ -30,3 +30,13 @@ async function getWeather() {
     alert("Error fetching data");
   }
 }
+
+document
+  .getElementById("cityInput")
+  .addEventListener("keypress", function (event) {
+
+    if (event.key === "Enter") {
+      getWeather();
+    }
+
+  });
